@@ -50,7 +50,7 @@
         }
         static void On_TimerCallback(object obj)
         {
-            Console.WriteLine("计算进度 {0} %  循环：{1}", (_nCount / int.MaxValue), _nCount);
+            Console.WriteLine("计算进度 {0} %  循环：{1}", (int)((_nCount / int.MaxValue) * 100D), _nCount);
         }
 
         //标准答案 也是出题方希望得到的答案
